@@ -188,11 +188,14 @@ export default class LightRayVisual extends Component {
   }
 
   render() {
+    const { moveLightSource } = this.props;
+
     return (
       <Appear
           absolute="fullscreen"
           animation="Fade"
           backgroundColor="shade-3"
+          clickable={ moveLightSource }
           onMouseDown={ (e) => this.handleMouseMove(moveEvent(e), true) }
           onMouseMove={ (e) => this.handleMouseMove(moveEvent(e)) }
           onTouchMove={ (e) => this.handleMouseMove(moveEvent(e)) }
