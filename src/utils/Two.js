@@ -100,6 +100,17 @@ export const createPolygonArc = (props) => {
   props);
 };
 
+export const createRectangle = (props) => {
+  return createShape(
+    new Two.Rectangle(
+      props.x + (props.width / 2),
+      props.y + (props.height / 2),
+      props.width,
+      props.height,
+    ),
+  props);
+};
+
 export const createText = (text, props) => {
   return createShape(
     new Two.Text(text, props.x, props.y, props),

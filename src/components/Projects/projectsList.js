@@ -30,8 +30,15 @@ const CoSine = {
   code: 'Cs',
   name: 'CoSine',
   to: '/projects/cosine',
-  labels: [],
   description: 'A simple and *unoriginal* visualisation to show the relationship between sine and cosine.',
+  year: 2018,
+};
+
+const GravityMaze = {
+  code: 'Gm',
+  name: 'Gravity Maze',
+  to: '/projects/gravity-maze',
+  description: 'A physics experiment with an interactable ball around a randomly generated maze.',
   year: 2018,
 };
 
@@ -99,27 +106,29 @@ const SnakeHeuristics = {
 
 
 export default [{
-  ...Pure360, x: 1, y: 1,
+  ...Pure360, x: 1, y: 2,
 }, {
-  ...Reedsy, x: 1, y: 2,
+  ...Reedsy, x: 1, y: 3,
 }, {
-  ...Brandwatch, x: 1, y: 3,
+  ...Brandwatch, x: 1, y: 4,
 }, {
-  ...SysPlot, x: 2, y: 2,
+  ...SysPlot, x: 2, y: 3,
 }, {
-  ...RemarkableReact, x: 2, y: 3,
+  ...RemarkableReact, x: 2, y: 4,
 }, {
-  ...Preshape, x: 3, y: 3,
+  ...Preshape, x: 3, y: 4,
 }, {
-  ...SnakeHeuristics, x: 4, y: 2,
+  ...SnakeHeuristics, x: 4, y: 3,
 }, {
-  ...BirthdayParadox, x: 4, y: 3,
+  ...BirthdayParadox, x: 4, y: 4,
 }, {
   ...LightRay, x: 5, y: 1,
 }, {
   ...CoSine, x: 5, y: 2,
 }, {
   ...CircleArt, x: 5, y: 3,
+}, {
+  ...GravityMaze, x: 5, y: 4,
 }]
 
 .sort((a, b) => a.y - b.y || a.x - b.x)
